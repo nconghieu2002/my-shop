@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Ultraboost Red",
+            "images": "https://i.pinimg.com/736x/5b/43/e1/5b43e12d2260366e8f80ee3c05b92b00.jpg",
+            "sex": "Giày Nam",
+            "price": 1000000,
+            "color": "yellow",
+            "size": [39, 40, 41, 42],
+            "description": "hes loo coong hieeus"
+        },
+        {
+            "id": 2,
+            "name": "Ultraboost Blue",
+            "images": "https://i.pinimg.com/474x/ab/45/58/ab45583e838e31a60fc8ea2bf8eb5dbb.jpg",
+            "sex": "Giày Nam",
+            "price": 1000000,
+            "color": "black",
+            "size": [39, 40, 41, 42],
+            "description": "hes loo coong hieeus"
+        },
+        {
+            "id": 3,
+            "name": "Ultraboost Green",
+            "images": "https://i.pinimg.com/236x/6b/70/f8/6b70f88a4a20a30588f68ce6ad2e534e.jpg",
+            "sex": "Giày Nam",
+            "price": 1000000,
+            "color": "black",
+            "size": [39, 40, 41, 42],
+            "description": "hes loo coong hieeus"
+        },
+        {
+            "id": 4,
+            "name": "Ultraboost White",
+            "images": "https://i.pinimg.com/736x/08/01/9f/08019f2cefd3c829acf6b7eae4e8862c.jpg",
+            "sex": "Giày Nam",
+            "price": 1000000,
+            "color": "black",
+            "size": [39, 40, 41, 42],
+            "description": "hes loo coong hieeus"
+        },
+        {
+            "id": 5,
+            "name": "Ultraboost White",
+            "images": "https://i.pinimg.com/736x/08/01/9f/08019f2cefd3c829acf6b7eae4e8862c.jpg",
+            "sex": "Giày Nam",
+            "price": 1000000,
+            "color": "black",
+            "size": [39, 40, 41, 42],
+            "description": "hes loo coong hieeus"
+        },
+        {
+            "id": 6,
+            "name": "Ultraboost Green",
+            "images": "https://i.pinimg.com/236x/6b/70/f8/6b70f88a4a20a30588f68ce6ad2e534e.jpg",
+            "sex": "Giày Nam",
+            "price": 1000000,
+            "color": "black",
+            "size": [39, 40, 41, 42],
+            "description": "hes loo coong hieeus"
+        }
+    ]
+}
