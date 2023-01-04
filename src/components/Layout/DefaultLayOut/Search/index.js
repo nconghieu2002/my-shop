@@ -32,6 +32,14 @@ function Search() {
         setShowResult(false);
     };
 
+    const handleChange = (e) => {
+        const searchValue = e.target.value;
+
+        if (!searchValue.startsWith(' ')) {
+            setSearchValue(searchValue);
+        }
+    };
+
     return (
         <Tippy
             interactive
@@ -39,9 +47,6 @@ function Search() {
             render={(attrs) => (
                 <div className={cx('search-result')} tabIndex="-1" {...attrs}>
                     <PopperWrapper>
-                        {/* {searchResult.map((result) => (
-                            <ListShoes key={result.id} data={result} />
-                        ))} */}
                         {searchResult.slice(0, 5).map((result) => (
                             <ListShoes key={result.id} data={result} />
                         ))}
@@ -56,7 +61,7 @@ function Search() {
                     value={searchValue}
                     type="text"
                     placeholder="Tìm kiếm..."
-                    onChange={(e) => setSearchValue(e.target.value)}
+                    onChange={handleChange}
                     onFocus={() => setShowResult(true)}
                 />
                 {!!searchValue && (
