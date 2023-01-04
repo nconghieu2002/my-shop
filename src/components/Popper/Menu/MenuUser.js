@@ -1,8 +1,8 @@
 import classNames from 'classnames/bind';
-import styles from './Menu.module.scss';
 import Tippy from '@tippyjs/react/headless';
 import { Link } from 'react-router-dom';
 
+import styles from './Menu.module.scss';
 import { Wrapper as PopperWrapper } from '../../Popper';
 import logo from '../../../assets/images/logo.png';
 

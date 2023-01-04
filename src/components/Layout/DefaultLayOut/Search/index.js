@@ -3,11 +3,11 @@ import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
-import { useDebounce } from '../../../../hooks';
 
+import styles from './Search.module.scss';
+import { useDebounce } from '../../../../hooks';
 import { Wrapper as PopperWrapper } from '../../../Popper';
 import ListShoes from '../../../Listshoes';
-import styles from './Search.module.scss';
 
 const cx = classNames.bind(styles);
 

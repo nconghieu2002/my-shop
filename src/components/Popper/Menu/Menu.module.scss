@@ -84,7 +84,7 @@
 //Menu Bag
 .menu-items-bag {
     width: 400px;
-    max-height: 600px;
+    max-height: 522px;
 }
 
 .wrapper-bag {
@@ -96,6 +96,7 @@
 .bag-header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 4px;
 }
 
 .bag-header-check {
@@ -117,12 +118,21 @@
     width: 20px;
     cursor: pointer;
     background-color: transparent;
-    margin-right: -8px;
+    margin-right: -6px;
+}
+
+.wrapper-scrool {
+    width: 100%;
+    max-height: 390px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
 .container {
     display: flex;
-    margin: 16px 0;
+    margin-top:8px;
+    margin-bottom: 12px;
     font-size: 16px;
 }
 
@@ -155,7 +165,7 @@
 }
 
 .bag-btn {
-    margin-top: 8px;
+    margin-top: 12px;
     display: flex;
     justify-content: space-around;
 }
