@@ -5,9 +5,9 @@ import { faMagnifyingGlass, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
 
 import styles from './Search.module.scss';
-import { useDebounce } from '../../../../hooks';
-import { Wrapper as PopperWrapper } from '../../../Popper';
-import ListShoes from '../../../Listshoes';
+import { useDebounce } from '../../../hooks';
+import { Wrapper as PopperWrapper } from '../../Popper';
+import ListShoes from '../../Listshoes';
 
 const cx = classNames.bind(styles);
 

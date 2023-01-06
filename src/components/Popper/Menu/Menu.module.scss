@@ -134,11 +134,18 @@
     margin-top:8px;
     margin-bottom: 12px;
     font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.02);
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
 }
 
 .image-shoes {
-    width: 100px;
-    height: 100px;
+    width: 102px;
+    height: 102px;
     object-fit: cover;
     border-radius: 4px;
     margin-right: 20px;

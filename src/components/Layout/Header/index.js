@@ -2,8 +2,8 @@ import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss';
-import logo from '../../../../assets/images/logo.png';
-import ButtonIcon from '../../../ButtonIcon';
+import logo from '../../../assets/images/logo.png';
+import ButtonIcon from '../../ButtonIcon';
 import Search from '../Search';
 
 const cx = classNames.bind(styles);
