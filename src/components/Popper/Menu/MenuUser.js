@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import styles from './Menu.module.scss';
 import { Wrapper as PopperWrapper } from '../../Popper';
 import logo from '../../../assets/images/logo.png';
+import config from '../../../config';
 
 const cx = classNames.bind(styles);
 
@@ -22,7 +23,7 @@ function MenuUser({ children }) {
                     {currentUser ? (
                         <PopperWrapper>
                             <div className={cx('wrapper-user')}>
-                                <Link className={cx('item-logo')} to="/">
+                                <Link className={cx('item-logo')} to={config.routes.home}>
                                     <img src={logo} className={cx('logo')} />
                                 </Link>
                                 <h2>Đăng ký tài khoản</h2>
