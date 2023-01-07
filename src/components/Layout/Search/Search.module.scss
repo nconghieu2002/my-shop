@@ -18,6 +18,7 @@
         background-color: transparent;
         font-size: 15px;
         caret-color: rgba(254, 44, 85, 1);
+        padding-right: 32px;
     }
 
     input:not(:placeholder-shown) ~ .search-btn {
