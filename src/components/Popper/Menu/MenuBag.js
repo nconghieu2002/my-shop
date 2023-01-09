@@ -5,6 +5,7 @@ import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
 
 import { Wrapper as PopperWrapper } from '../../Popper';
+import Button from '../../Button';
 
 const cx = classNames.bind(styles);
 
@@ -90,8 +91,8 @@ function MenuBag({ children }) {
                                 </div>
                             </div>
                             <div className={cx('bag-btn')}>
-                                <button className={cx('bag-btn-view', 'bag-btn-all')}>View Bag (2)</button>
-                                <button className={cx('bag-btn-check', 'bag-btn-all')}>Checkout</button>
+                                <Button to="/women" primary>View Bag (2)</Button>
+                                <Button >Checkout</Button>
                             </div>
                         </div>
                     </PopperWrapper>

@@ -131,7 +131,7 @@
 
 .container {
     display: flex;
-    margin-top:8px;
+    margin-top: 8px;
     margin-bottom: 12px;
     font-size: 16px;
     cursor: pointer;
@@ -168,29 +168,10 @@
 }
 
 .content-price {
-
 }
 
 .bag-btn {
     margin-top: 12px;
     display: flex;
     justify-content: space-around;
-}
-
-.bag-btn-all {
-    width: 140px;
-    height: 48px;
-    font-size: 15px;
-    border-radius: 999px;
-    cursor: pointer;
-}
-
-.bag-btn-view {
-    color: rgba(254, 44, 85, 1);
-    border: 1px solid rgba(254, 44, 85, 0.3);
-}
-
-.bag-btn-check {
-    color: #fff;
-    background-color: rgba(254, 44, 85, 1);
 }

@@ -1,10 +1,10 @@
 import classNames from 'classnames/bind';
+import styles from './ButtonIcon.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
 import { faHeart, faUser } from '@fortawesome/free-regular-svg-icons';
 import { useState, useRef, useEffect } from 'react';
 
-import styles from './ButtonIcon.module.scss';
 import MenuUser from '../Popper/Menu/MenuUser';
 import MenuWish from '../Popper/Menu/MenuWish';
 import MenuBag from '../Popper/Menu/MenuBag';
