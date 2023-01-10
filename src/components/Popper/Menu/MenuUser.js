@@ -3,9 +3,9 @@ import Tippy from '@tippyjs/react/headless';
 import { Link } from 'react-router-dom';
 
 import styles from './Menu.module.scss';
-import { Wrapper as PopperWrapper } from '../../Popper';
-import logo from '../../../assets/images/logo.png';
-import config from '../../../config';
+import { Wrapper as PopperWrapper } from 'components/Popper';
+import logo from 'assets/images/logo.png';
+import config from 'config';
 
 const cx = classNames.bind(styles);
 
