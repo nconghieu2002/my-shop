@@ -22,7 +22,7 @@
     }
 
     input:not(:placeholder-shown) ~ .search-btn {
-        color: rgba(22, 24, 35, 0.75);
+        color: rgba(254, 44, 85, 1);
     }
 
     &::after {
@@ -36,7 +36,7 @@
     }
 
     &:focus-within {
-        border-color: rgba(22, 24, 35, 0.2);
+        border-color: rgba(254, 44, 85, 1);
     }
 }
 .search-result {

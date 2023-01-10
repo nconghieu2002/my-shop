@@ -2,10 +2,10 @@ import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import { NavLink } from 'react-router-dom';
 
-import logo from '../../../assets/images/logo.png';
-import ButtonIcon from '../../ButtonIcon';
+import config from 'config';
+import logo from 'assets/images/logo.png';
 import Search from '../Search';
-import config from '../../../config';
+import ButtonIcon from 'components/ButtonIcon';
 
 const cx = classNames.bind(styles);
 

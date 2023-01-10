@@ -1,5 +1,9 @@
 import classNames from 'classnames/bind';
 import styles from './Banner.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRightLong } from '@fortawesome/free-solid-svg-icons';
+
+import Button from '../Button';
 
 const cx = classNames.bind(styles);
 
@@ -12,8 +16,10 @@ function Banner() {
                 alt=""
             />
             <div className={cx('container')}>
-                <h2>GIÀY CHÍNH HÃNG</h2>
-                <p>Phong cách tươi mới, mang đến sự thoải mái.</p>
+                <h2 className={cx('title')}>GIÀY CHÍNH HÃNG</h2>
+                <p className={cx('text')}>Phong cách tươi mới, mang đến sự thoải mái.</p>
+                <Button rightIcon={<FontAwesomeIcon icon={faRightLong} />}>GIÀY NAM</Button>
+                <Button rightIcon={<FontAwesomeIcon icon={faRightLong} />}>GIÀY NỮ</Button>
             </div>
         </div>
     );
