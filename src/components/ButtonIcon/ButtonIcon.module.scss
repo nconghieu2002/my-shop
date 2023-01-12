@@ -2,24 +2,43 @@
     width: 10%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .user {
     display: flex;
     flex-direction: column;
+    margin-top: -30px;
 }
 
-.active-user ,
+.user-icon {
+    position: absolute;
+    left: 0;
+}
+
+.wish-icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bag-icon {
+    position: absolute;
+    right: 0;
+}
+
+.active-user,
 .active-wish,
 .active-bag {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .active-user .user-btn,
 .active-wish .wish-btn,
 .active-bag .bag-btn {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     font-size: 26px;
     color: rgba(254, 44, 85, 1);
 }
@@ -29,6 +48,7 @@
 .active-bag .text {
     opacity: 1;
     color: rgba(254, 44, 85, 1);
+    transform: translateY(-8px);
 }
 
 .user-btn,

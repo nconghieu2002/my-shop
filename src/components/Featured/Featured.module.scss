@@ -7,9 +7,29 @@
     text-align: center;
 }
 
+.wrapper-form {
+    position: relative;
+    margin-top: -80px;
+}
+
+.form {
+    width: 1320px;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 40px;
+    scroll-behavior: smooth;
+}
+
+.form::-webkit-scrollbar {
+    display: none;
+}
+
 .container {
+    margin-top: 80px;
     display: flex;
     justify-content: space-around;
+    width: max-content;
 }
 
 .card {
@@ -17,6 +37,10 @@
     width: 400px;
     height: 460px;
     background-color: rgba(22, 24, 35, 0.06);
+}
+
+.card + .card {
+    margin-left: 60px;
 }
 
 .mark {
@@ -39,6 +63,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: -100px;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -55,7 +80,6 @@
 }
 
 .description {
-    width: 100%;
     margin-top: 100px;
     margin-bottom: 8px;
     opacity: 0;
@@ -105,18 +129,75 @@
     }
 }
 
-.scroll-left,
-.scroll-right {
+.scroll-left-2,
+.scroll-right-2 {
     font-size: 50px;
     color: rgba(254, 44, 85, 1);
     background-color: #fff;
     cursor: pointer;
 }
 
-.scroll-left {
-    margin-right: -30px;
+.scroll-left-2 {
+    position: absolute;
+    top: 50%;
 }
 
-.scroll-right {
-    margin-left: -30px;
+.scroll-right-2 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+@media screen and (max-width: 1500px) {
+    .scroll-left-2,
+    .scroll-right-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper-form {
+        margin-left: -10px;
+    }
+
+    .card {
+        width: 380px;
+    }
+
+    .card + .card {
+        margin-left: 85px;
+    }
+
+    .mark {
+        font-size: 80px;
+        left: 10%;
+    }
+
+    .img {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper-form {
+        margin-left: -50px;
+    }
+
+    .card {
+        width: 300px;
+        height: 380px;
+    }
+
+    .card + .card {
+        margin-left: 60px;
+    }
+
+    .mark {
+        font-size: 60px;
+        left: 15%;
+    }
+
+    .img {
+        width: 300px;
+    }
 }

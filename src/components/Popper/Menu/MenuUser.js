@@ -26,7 +26,7 @@ function MenuUser({ children }) {
                                 <Link className={cx('item-logo')} to={config.routes.home}>
                                     <img src={logo} className={cx('logo')} />
                                 </Link>
-                                <h2>Đăng ký tài khoản</h2>
+                                <p className={cx('title')}>Đăng ký tài khoản</p>
                                 <div className={cx('login')}>
                                     <div className={cx('account')}>
                                         <p className={cx('text')}>Tài khoản</p>
@@ -52,7 +52,7 @@ function MenuUser({ children }) {
                                 <Link className={cx('item-logo')} to="/">
                                     <img src={logo} className={cx('logo')} />
                                 </Link>
-                                <h2>Đăng nhập tài khoản</h2>
+                                <p className={cx('title')}>Đăng nhập tài khoản</p>
                                 <div className={cx('login')}>
                                     <div className={cx('account')}>
                                         <p className={cx('text')}>Tài khoản</p>

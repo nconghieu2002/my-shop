@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightLong } from '@fortawesome/free-solid-svg-icons';
 
 import Button from '../Button';
-import { createContext } from 'react';
 
 const cx = classNames.bind(styles);
 

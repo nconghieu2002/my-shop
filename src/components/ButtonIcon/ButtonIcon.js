@@ -38,7 +38,7 @@ function ButtonIcon() {
 
     return (
         <div ref={ref} className={cx('actions')}>
-            <div className={cx('user', isActive === 1 ? cx('active-user') : '')}>
+            <div className={cx('user', 'user-icon', isActive === 1 ? cx('active-user') : '')}>
                 <MenuUser>
                     <button
                         className={cx('user-btn')}
@@ -51,7 +51,7 @@ function ButtonIcon() {
                 </MenuUser>
                 <span className={cx('text')}>Info</span>
             </div>
-            <div className={cx('user', isActive === 2 ? cx('active-wish') : '')}>
+            <div className={cx('user', 'wish-icon', isActive === 2 ? cx('active-wish') : '')}>
                 <MenuWish>
                     <button
                         className={cx('wish-btn')}
@@ -64,7 +64,7 @@ function ButtonIcon() {
                 </MenuWish>
                 <span className={cx('text')}>Favourites</span>
             </div>
-            <div className={cx('user', isActive === 3 ? cx('active-bag') : '')}>
+            <div className={cx('user', 'bag-icon', isActive === 3 ? cx('active-bag') : '')}>
                 <MenuBag>
                     <button
                         className={cx('bag-btn')}
