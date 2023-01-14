@@ -13,8 +13,8 @@ function MenShoes() {
                 image="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/enUS/Images/ss23-originals-stan-smith-w-blueversion-dotcom-hp-mh-large-mens-v2-d_tcm221-982520.jpg"
                 title="GIÀY NAM"
                 text="Nhẹ nhàng nhưng đầy nam tính."
-                homebtn="TRANG CHỦ"
-                womenbtn="GIÀY NỮ"
+                homeBtn="TRANG CHỦ"
+                womenBtn="GIÀY NỮ"
             />
         </div>
     );

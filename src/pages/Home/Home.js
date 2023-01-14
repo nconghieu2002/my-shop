@@ -15,8 +15,8 @@ function Home() {
                 image="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/enUS/Images/hp-ss23-UBDNAALWAYSON-HR0063-mh-large-d_tcm221-977575.jpg"
                 title="GIÀY CHÍNH HÃNG"
                 text="Phong cách tươi mới, mang đến sự thoải mái."
-                menbtn="GIÀY NAM"
-                womenbtn="GIÀY NỮ"
+                menBtn="GIÀY NAM"
+                womenBtn="GIÀY NỮ"
             />
             <Featured />
             <OnSale />

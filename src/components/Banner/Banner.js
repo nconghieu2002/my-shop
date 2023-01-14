@@ -6,7 +6,7 @@ import Button from 'components/Button';
 
 const cx = classNames.bind(styles);
 
-function Banner({ image, title, text, homebtn, menbtn, womenbtn, primary }) {
+function Banner({ image, title, text, homeBtn, menBtn, womenBtn, primary }) {
     const classes = cx('wrapper', {
         primary,
     });
@@ -17,21 +17,21 @@ function Banner({ image, title, text, homebtn, menbtn, womenbtn, primary }) {
             <div className={cx('container')}>
                 <h2 className={cx('title')}>{title}</h2>
                 <p className={cx('text')}>{text}</p>
-                {homebtn && (
+                {homeBtn && (
                     <Button to="/" rightIcon={<FontAwesomeIcon icon={faRightLong} />}>
-                        {homebtn}
+                        {homeBtn}
                     </Button>
                 )}
                 <div className={cx('margin')}></div>
-                {menbtn && (
+                {menBtn && (
                     <Button to="/men" rightIcon={<FontAwesomeIcon icon={faRightLong} />}>
-                        {menbtn}
+                        {menBtn}
                     </Button>
                 )}
                 <div className={cx('margin')}></div>
-                {womenbtn && (
+                {womenBtn && (
                     <Button to="/women" rightIcon={<FontAwesomeIcon icon={faRightLong} />}>
-                        {womenbtn}
+                        {womenBtn}
                     </Button>
                 )}
             </div>
