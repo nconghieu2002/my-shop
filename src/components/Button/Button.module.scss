@@ -16,14 +16,25 @@
     }
 }
 
+.wrapper[href] {
+    color: #fff;
+
+    &:hover {
+        color: rgba(22, 24, 35, 0.8);
+    }
+}
+
 .primary[href] {
     color: rgba(254, 44, 85, 1);
     border: 1px solid rgba(254, 44, 85, 1);
     background-color: rgba(22, 24, 35, 0.06);
+
+    &:hover {
+        color: rgba(22, 24, 35, 0.8);
+    }
 }
 
 .icon + .title,
 .title + .icon {
     margin-left: 8px;
 }
-

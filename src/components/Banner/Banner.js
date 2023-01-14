@@ -2,25 +2,38 @@ import classNames from 'classnames/bind';
 import styles from './Banner.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightLong } from '@fortawesome/free-solid-svg-icons';
-
-import Button from '../Button';
+import Button from 'components/Button';
 
 const cx = classNames.bind(styles);
 
-function Banner() {
+function Banner({ image, title, text, homebtn, menbtn, womenbtn, primary }) {
+    const classes = cx('wrapper', {
+        primary,
+    });
+
     return (
-        <div className={cx('wrapper')}>
-            <img
-                className={cx('image')}
-                src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/enUS/Images/hp-ss23-UBDNAALWAYSON-HR0063-mh-large-d_tcm221-977575.jpg"
-                alt=""
-            />
+        <div className={classes}>
+            <img className={cx('image')} src={image} alt="" />
             <div className={cx('container')}>
-                <h2 className={cx('title')}>GIÀY CHÍNH HÃNG</h2>
-                <p className={cx('text')}>Phong cách tươi mới, mang đến sự thoải mái.</p>
-                <Button rightIcon={<FontAwesomeIcon icon={faRightLong} />}>GIÀY NAM</Button>
+                <h2 className={cx('title')}>{title}</h2>
+                <p className={cx('text')}>{text}</p>
+                {homebtn && (
+                    <Button to="/" rightIcon={<FontAwesomeIcon icon={faRightLong} />}>
+                        {homebtn}
+                    </Button>
+                )}
                 <div className={cx('margin')}></div>
-                <Button rightIcon={<FontAwesomeIcon icon={faRightLong} />}>GIÀY NỮ</Button>
+                {menbtn && (
+                    <Button to="/men" rightIcon={<FontAwesomeIcon icon={faRightLong} />}>
+                        {menbtn}
+                    </Button>
+                )}
+                <div className={cx('margin')}></div>
+                {womenbtn && (
+                    <Button to="/women" rightIcon={<FontAwesomeIcon icon={faRightLong} />}>
+                        {womenbtn}
+                    </Button>
+                )}
             </div>
         </div>
     );
