@@ -4,14 +4,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
 import { faHeart, faUser } from '@fortawesome/free-regular-svg-icons';
 import { useState, useRef, useEffect } from 'react';
+import { useContext } from 'react';
 
 import MenuUser from '../Popper/Menu/MenuUser';
 import MenuWish from '../Popper/Menu/MenuWish';
 import MenuBag from '../Popper/Menu/MenuBag';
+import { Context } from 'Context';
 
 const cx = classNames.bind(styles);
 
 function ButtonIcon() {
+    const {count} = useContext(Context)
+
     const [isActive, setIsActive] = useState(false);
 
     const ref = useRef(null);
@@ -63,6 +67,7 @@ function ButtonIcon() {
                     </button>
                 </MenuWish>
                 <span className={cx('text')}>Favourites</span>
+                <span className={cx('count-wish')}>0</span>
             </div>
             <div className={cx('user', 'bag-icon', isActive === 3 ? cx('active-bag') : '')}>
                 <MenuBag>
@@ -76,7 +81,7 @@ function ButtonIcon() {
                     </button>
                 </MenuBag>
                 <span className={cx('text')}>Bag</span>
-                <span className={cx('count')}>1</span>
+                <span className={cx('count')}>{count}</span>
             </div>
         </div>
     );

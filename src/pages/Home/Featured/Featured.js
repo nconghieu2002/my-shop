@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Featured.module.scss';
 import { useRef } from 'react';
+import { useContext } from 'react';
 
 import image1 from 'assets/images/featured1.png';
 import image2 from 'assets/images/featured2.png';
@@ -10,10 +11,13 @@ import image5 from 'assets/images/featured5.png';
 import image6 from 'assets/images/featured6.png';
 
 import Button from 'components/Button';
+import { Context } from 'Context';
 
 const cx = classNames.bind(styles);
 
 function Featured() {
+    const {handleBuy} = useContext(Context)
+
     const ref = useRef();
 
     const slideLeft = () => {
@@ -38,7 +42,7 @@ function Featured() {
                                 <span className={cx('price')}>$199</span>
                                 <p className={cx('description')}>Giày chạy bộ 4DFWD 2</p>
                                 <div className={cx('btn')}>
-                                    <Button>Buy</Button>
+                                    <Button onClick={handleBuy}>Buy</Button>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +54,7 @@ function Featured() {
                                 <span className={cx('price')}>$110</span>
                                 <p className={cx('description')}>Giày Ultraboost 1.0</p>
                                 <div className={cx('btn')}>
-                                    <Button>Buy</Button>
+                                    <Button onClick={handleBuy}>Buy</Button>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +66,7 @@ function Featured() {
                                 <span className={cx('price')}>$105</span>
                                 <p className={cx('description')}>Giày chạy bộ ULTRABOOST</p>
                                 <div className={cx('btn')}>
-                                    <Button>Buy</Button>
+                                    <Button onClick={handleBuy}>Buy</Button>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +78,7 @@ function Featured() {
                                 <span className={cx('price')}>$399</span>
                                 <p className={cx('description')}>Giày Y-3 IDOSO BOOST</p>
                                 <div className={cx('btn')}>
-                                    <Button>Buy</Button>
+                                    <Button onClick={handleBuy}>Buy</Button>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +90,7 @@ function Featured() {
                                 <span className={cx('price')}>$105</span>
                                 <p className={cx('description')}>Giày thể thao NMD_R1</p>
                                 <div className={cx('btn')}>
-                                    <Button>Buy</Button>
+                                    <Button onClick={handleBuy}>Buy</Button>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +102,7 @@ function Featured() {
                                 <span className={cx('price')}>$70</span>
                                 <p className={cx('description')}>Giày ADISTAR 1 REFUEL</p>
                                 <div className={cx('btn')}>
-                                    <Button>Buy</Button>
+                                    <Button onClick={handleBuy}>Buy</Button>
                                 </div>
                             </div>
                         </div>

@@ -26,7 +26,7 @@ function OnSale() {
     };
 
     const handleRemoveMore = () => {
-        setCurrentShow(true);
+        setCurrentShow(false);
     };
 
     return (
@@ -41,6 +41,7 @@ function OnSale() {
                             .map((data) => (
                                 <CardItem
                                     key={data.id}
+                                    to={"/detail"+data.id}
                                     img={data.banner}
                                     name={data.name}
                                     price={data.price}

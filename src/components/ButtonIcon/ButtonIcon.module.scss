@@ -85,3 +85,21 @@
 .active-bag .count {
     opacity: 0;
 }
+
+.count-wish {
+    font-size: 12px;
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(254, 44, 85, 1);
+    position: absolute;
+    border-radius: 50%;
+    top: 32px;
+    right: 10px;
+}
+
+.active-wish .count-wish {
+    opacity: 0;
+}

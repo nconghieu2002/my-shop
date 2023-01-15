@@ -3,13 +3,17 @@ import styles from './Menu.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
+import { useContext } from 'react';
 
 import { Wrapper as PopperWrapper } from '../../Popper';
 import Button from '../../Button';
+import { Context } from 'Context';
 
 const cx = classNames.bind(styles);
 
 function MenuBag({ children }) {
+    const { count } = useContext(Context);
+
     return (
         <Tippy
             interactive={true}
@@ -40,59 +44,16 @@ function MenuBag({ children }) {
                                         <div className={cx('content-size')}>Size EU 44.5</div>
                                         <div className={cx('content-price')}>2000$</div>
                                     </div>
-                                </div>
-                                <div className={cx('container')}>
-                                    <img
-                                        className={cx('image-shoes')}
-                                        src="https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/113ed7bfedf242489d79aed7016d10b6_9366/GV8697_700_GV8697_01_standard.jpg.jpg?sh=364&strip=false&sw=364"
-                                    />
-                                    <div className={cx('container-content')}>
-                                        <div className={cx('content-title')}>Nike Free Metcon 4</div>
-                                        <div className={cx('content-sex')}>Giày Nam</div>
-                                        <div className={cx('content-size')}>Size EU 44.5</div>
-                                        <div className={cx('content-price')}>2000$</div>
-                                    </div>
-                                </div>
-                                <div className={cx('container')}>
-                                    <img
-                                        className={cx('image-shoes')}
-                                        src="https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/113ed7bfedf242489d79aed7016d10b6_9366/GV8697_700_GV8697_01_standard.jpg.jpg?sh=364&strip=false&sw=364"
-                                    />
-                                    <div className={cx('container-content')}>
-                                        <div className={cx('content-title')}>Nike Free Metcon 4</div>
-                                        <div className={cx('content-sex')}>Giày Nam</div>
-                                        <div className={cx('content-size')}>Size EU 44.5</div>
-                                        <div className={cx('content-price')}>2000$</div>
-                                    </div>
-                                </div>
-                                <div className={cx('container')}>
-                                    <img
-                                        className={cx('image-shoes')}
-                                        src="https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/113ed7bfedf242489d79aed7016d10b6_9366/GV8697_700_GV8697_01_standard.jpg.jpg?sh=364&strip=false&sw=364"
-                                    />
-                                    <div className={cx('container-content')}>
-                                        <div className={cx('content-title')}>Nike Free Metcon 4</div>
-                                        <div className={cx('content-sex')}>Giày Nam</div>
-                                        <div className={cx('content-size')}>Size EU 44.5</div>
-                                        <div className={cx('content-price')}>2000$</div>
-                                    </div>
-                                </div>
-                                <div className={cx('container')}>
-                                    <img
-                                        className={cx('image-shoes')}
-                                        src="https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/113ed7bfedf242489d79aed7016d10b6_9366/GV8697_700_GV8697_01_standard.jpg.jpg?sh=364&strip=false&sw=364"
-                                    />
-                                    <div className={cx('container-content')}>
-                                        <div className={cx('content-title')}>Nike Free Metcon 4</div>
-                                        <div className={cx('content-sex')}>Giày Nam</div>
-                                        <div className={cx('content-size')}>Size EU 44.5</div>
-                                        <div className={cx('content-price')}>2000$</div>
-                                    </div>
+                                    <button className={cx('clear-item')}>
+                                        <FontAwesomeIcon icon={faXmark} />
+                                    </button>
                                 </div>
                             </div>
                             <div className={cx('bag-btn')}>
-                                <Button to="/women" primary>View Bag (2)</Button>
-                                <Button >Checkout</Button>
+                                <Button to="/women" primary>
+                                    View Bag ({count})
+                                </Button>
+                                <Button>Checkout</Button>
                             </div>
                         </div>
                     </PopperWrapper>

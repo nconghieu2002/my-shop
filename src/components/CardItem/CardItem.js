@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
-function CardItem({ img, name, price, sale, noSale, category, btnColor }) {
+function CardItem({ to, img, name, price, sale, noSale, category, btnColor }) {
     if (!sale) {
         noSale = true;
     }
 
     return (
         <div className={cx('wrapper')}>
-            <Link className={cx('link-detail')}>
+            <Link to={to}  className={cx('link-detail')}>
                 <img className={cx('img')} src={img} alt="" />
             </Link>
             <div className={cx('data')}>

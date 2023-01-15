@@ -179,6 +179,16 @@
 .content-price {
 }
 
+.clear-item {
+    background-color: #fff;
+    position: absolute;
+    right: 50px;
+
+    &:hover {
+        color: rgba(254, 44, 85, 1);
+    }
+}
+
 .bag-btn {
     margin-top: 12px;
     display: flex;
