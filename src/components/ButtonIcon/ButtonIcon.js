@@ -76,6 +76,7 @@ function ButtonIcon() {
                     </button>
                 </MenuBag>
                 <span className={cx('text')}>Bag</span>
+                <span className={cx('count')}>1</span>
             </div>
         </div>
     );

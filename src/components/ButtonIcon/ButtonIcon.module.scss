@@ -67,3 +67,21 @@
     transition: 0.5s;
     opacity: 0;
 }
+
+.count {
+    font-size: 12px;
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(254, 44, 85, 1);
+    position: absolute;
+    border-radius: 50%;
+    top: 32px;
+    right: -8px;
+}
+
+.active-bag .count {
+    opacity: 0;
+}

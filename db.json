@@ -10,9 +10,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/03be8f38d82242b38982ae84015b3119_9366/Ultraboost_1.0_Arizona_State_White_HQ5877_02_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f202dac1cdfd44cb84d3ae84015b0c37_9366/Ultraboost_1.0_Arizona_State_White_HQ5877_03_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 200,
-            "sale": 100,
+            "sale": "",
             "color": "yellow",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -27,9 +27,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/07d09e15d9cb4721a6b0ae830165525a_9366/Ultraboost_1.0_Indiana_White_HQ5872_02_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a0c1e5420fca43368530ae8301650952_9366/Ultraboost_1.0_Indiana_White_HQ5872_03_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 180,
-            "sale": "90",
+            "sale": "",
             "color": "red",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi Ultraboost 1.0 Indiana giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -44,7 +44,7 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a5d70f43359b4e748c1fae84015331e2_9366/Ultraboost_1.0_Miami_White_HQ5884_02_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0600837ea7954c72b0f5ae8401530d55_9366/Ultraboost_1.0_Miami_White_HQ5884_03_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 200,
             "sale": "",
             "color": "green",
@@ -61,9 +61,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/568b3748bb964f01820daed8013978ff_9366/4DFWD_2_Running_Shoes_White_HQ1039_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e3eaf894c25743358cdaaed801398064_9366/4DFWD_2_Running_Shoes_White_HQ1039_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 200,
-            "sale": "160",
+            "sale": "",
             "color": "white",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -78,9 +78,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9a3f73b40d9e4416b587ae9900ceed56_9366/4DFWD_2_Running_Shoes_Orange_GY8421_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fee5135759724df68271ae9900cef5de_9366/4DFWD_2_Running_Shoes_Orange_GY8421_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 200,
-            "sale": "",
+            "sale": 100,
             "color": "orange",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -95,9 +95,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c760b5e12b544df29b03ad6a00f84cb1_9366/NMD_R1_Primeblue_Shoes_White_GZ9261_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ac542acaa2324d378be6ad6a00f8a724_9366/NMD_R1_Primeblue_Shoes_White_GZ9261_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 160,
-            "sale": "100",
+            "sale": 80,
             "color": "white",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -112,9 +112,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/35a85b0d292d4053a0a6ae920142e8db_9366/NMD_R1_Shoes_Red_GX9886_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5e8ee5553ceb435196ffae920142fa33_9366/NMD_R1_Shoes_Red_GX9886_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 150,
-            "sale": "85",
+            "sale": 85,
             "color": "blue",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -129,9 +129,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8c6bb618e7644d57b17aaef900edf63c_9366/Terrex_AX4_GORE-TEX_Hiking_Shoes_Blue_HP7397_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d8696a61d94645e08a35aef900ee032f_9366/Terrex_AX4_GORE-TEX_Hiking_Shoes_Blue_HP7397_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 130,
-            "sale": "80",
+            "sale": 80,
             "color": "blue",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -146,7 +146,7 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8c6bb618e7644d57b17aaef900edf63c_9366/Terrex_AX4_GORE-TEX_Hiking_Shoes_Blue_HP7397_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d8696a61d94645e08a35aef900ee032f_9366/Terrex_AX4_GORE-TEX_Hiking_Shoes_Blue_HP7397_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 90,
             "sale": "",
             "color": "white",
@@ -163,9 +163,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6959d47bd03e46618fccad1e002527d6_9366/Kaptir_2.0_Shoes_Green_GY8027_03_standard.jpg",
                 "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/26b6ee1aefc648229895ad1e002542e3_9366/Kaptir_2.0_Shoes_Green_GY8027_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 90,
-            "sale": "50",
+            "sale": 50,
             "color": "black",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -180,9 +180,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0652852af99e42beba61aed3011d32e9_9366/Forum_Low_Shoes_Burgundy_GX7077_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78df4b53f70d4e0ebbaaaed3011ea034_9366/Forum_Low_Shoes_Burgundy_GX7077_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 110,
-            "sale": "55",
+            "sale": 55,
             "color": "brown",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -197,7 +197,7 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/de88ffb343bc4e09870eae7a00f080f5_9366/Forum_Low_Shoes_Black_HQ6807_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b61457d60600473dbcc5ae7a00f17a16_9366/Forum_Low_Shoes_Black_HQ6807_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 110,
             "sale": "",
             "color": "black",
@@ -214,9 +214,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9be702e2d2924377957cae920116c9ac_9366/NMD_V3_Shoes_Orange_GX2088_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1bb72d721070498b87d7ae920116dd86_9366/NMD_V3_Shoes_Orange_GX2088_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 160,
-            "sale": "100",
+            "sale": 100,
             "color": "orange",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -231,7 +231,7 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/657dfa9095da4fc5908fae8c00cace8d_9366/NMD_V3_Shoes_Yellow_HQ3969_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ebd11c96196444fb9bffae8c01752d7b_9366/NMD_V3_Shoes_Yellow_HQ3969_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 160,
             "sale": "",
             "color": "yellow",
@@ -248,9 +248,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a2614edc074645d8ab4dae8b009e5115_9366/NMD_V3_Shoes_Blue_GY4134_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/715f846b64f84857887aae8b009e6457_9366/NMD_V3_Shoes_Blue_GY4134_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 160,
-            "sale": "80",
+            "sale": 80,
             "color": "blue",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -265,7 +265,7 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b843f80b77384ddda90faed900a1ec11_9366/Ultraboost_22_COLD.RDY_2.0_Running_Shoes_Beige_GX5938_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/393a244b630b47bba8aaaed900a1f888_9366/Ultraboost_22_COLD.RDY_2.0_Running_Shoes_Beige_GX5938_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 160,
             "sale": "",
             "color": "brown",
@@ -282,9 +282,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/92c88df4a5944163adbfaed80138f98d_9366/Ultraboost_22_COLD.RDY_2.0_Running_Shoes_Orange_GZ6877_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8b7c6868bd544e448efaaed8013905f5_9366/Ultraboost_22_COLD.RDY_2.0_Running_Shoes_Orange_GZ6877_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 160,
-            "sale": "100",
+            "sale": 100,
             "color": "green",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -299,7 +299,7 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/57ac6f782ec64a0991d8aec900e6ed2b_9366/Ultraboost_22_COLD.RDY_2.0_Running_Shoes_Black_GX6691_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2d51000703714df0a9aeaeba0020b159_9366/Adifom_SLTN_Shoes_White_HQ1934_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 210,
             "sale": "",
             "color": "black",
@@ -316,9 +316,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/14e73852aed146c29dccaecc0089f304_9366/adidas_4DFWD_x_Parley_Running_Shoes_Burgundy_GY8424_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9330a047e09449f1b6e3aecc0089ff50_9366/adidas_4DFWD_x_Parley_Running_Shoes_Burgundy_GY8424_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 220,
-            "sale": "110",
+            "sale": 110,
             "color": "brown",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -333,9 +333,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2546db2684044aef8345af2a00d5d72c_9366/Forum_Low_Shoes_Grey_HQ1506_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3df8c00185ae437e860baf2a00d5de4f_9366/Forum_Low_Shoes_Grey_HQ1506_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 110,
-            "sale": "55",
+            "sale": 55,
             "color": "white",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -350,7 +350,7 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc1a30623b5e4a98844baeb500ce5130_9366/Adifom_SLTN_Shoes_Black_HP6480_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/da7913f33efd4fb4bbc6aeb500ce5d43_9366/Adifom_SLTN_Shoes_Black_HP6480_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 100,
             "sale": "",
             "color": "black",
@@ -367,9 +367,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9ec7b01dc0454ba49c6aaeba0020b00a_9366/Adifom_SLTN_Shoes_White_HQ1934_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/da7913f33efd4fb4bbc6aeb500ce5d43_9366/Adifom_SLTN_Shoes_Black_HP6480_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 100,
-            "sale": "50",
+            "sale": 50,
             "color": "white",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -384,9 +384,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c1f7d3fd0c3345d6a7d5aeda01429957_9366/D.O.N._Issue_4_Basketball_Shoes_Red_GY6507_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e0ecb72f74eb4aebba63aeda0143954a_9366/D.O.N._Issue_4_Basketball_Shoes_Red_GY6507_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 120,
-            "sale": "80",
+            "sale": 80,
             "color": "red",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -401,7 +401,7 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e2b7af0b467f4629aeebaeda0144b0de_9366/D.O.N._Issue_4_Basketball_Shoes_Blue_GY6504_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ab2bbebbf047497992f1aeda0145af97_9366/D.O.N._Issue_4_Basketball_Shoes_Blue_GY6504_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 110,
             "sale": "",
             "color": "green",
@@ -418,9 +418,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b466a902ca5749608212ad1a00a3c239_9366/EQ21_Run_Running_Shoes_Orange_H00516_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c2b6c4764fc14394bbeaad1a00a3c92a_9366/EQ21_Run_Running_Shoes_Orange_H00516_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 80,
-            "sale": "50",
+            "sale": 50,
             "color": "orange",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -435,9 +435,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/604bea742b4b4985898caed200c7e93a_9366/EQ21_Run_Running_Shoes_Grey_GY2192_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/edf10712e8284ef387a1aed200d4056c_9366/EQ21_Run_Running_Shoes_Grey_GY2192_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 80,
-            "sale": "50",
+            "sale": "",
             "color": "black",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -452,9 +452,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9122b2eccdbc486a84f3aecb00db7826_9366/Hyperturf_Shoes_Yellow_GX4487_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6d776c9b4dc94b4aa649aecb00db829d_9366/Hyperturf_Shoes_Yellow_GX4487_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 140,
-            "sale": "70",
+            "sale": 70,
             "color": "yellow",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -469,7 +469,7 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/71b2dcc3a0f148cebe34ae98017a678a_9366/Hyperturf_Shoes_White_GY9410_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3f417d4e42b144ce8500ae98017a6f28_9366/Hyperturf_Shoes_White_GY9410_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 140,
             "sale": "",
             "color": "white",
@@ -486,9 +486,9 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/eb30503ae02f429183d2af4700cde6fe_9366/adidas_Racer_TR21_x_LEGOr_Shoes_Blue_HQ8872_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/94f908abef174d80b8c3af4700cdf1c7_9366/adidas_Racer_TR21_x_LEGOr_Shoes_Blue_HQ8872_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 85,
-            "sale": "50",
+            "sale": 50,
             "color": "blue",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
@@ -503,7 +503,7 @@
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ea7225c290b24e3d9b15af4700cd94fa_9366/adidas_Racer_TR21_x_LEGOr_Shoes_Black_HQ8871_03_standard.jpg",
                 "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/dc723ab1cc404794a2c2af4700cd9e06_9366/adidas_Racer_TR21_x_LEGOr_Shoes_Black_HQ8871_04_standard.jpg"
             ],
-            "sex": "Giày Nam",
+            "category": "Giày Nam",
             "price": 85,
             "sale": "",
             "color": "black",

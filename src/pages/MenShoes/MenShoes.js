@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './MenShoes.module.scss';
 
 import Banner from 'components/Banner';
+import SectionMen from 'components/SectionMen';
 
 const cx = classNames.bind(styles);
 
@@ -16,6 +17,7 @@ function MenShoes() {
                 homeBtn="TRANG CHỦ"
                 womenBtn="GIÀY NỮ"
             />
+            <SectionMen />
         </div>
     );
 }

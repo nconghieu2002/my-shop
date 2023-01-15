@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
-function CardItem({ img, name, price, sale, noSale, sex, btnColor }) {
+function CardItem({ img, name, price, sale, noSale, category, btnColor }) {
     if (!sale) {
         noSale = true;
     }
@@ -16,7 +16,7 @@ function CardItem({ img, name, price, sale, noSale, sex, btnColor }) {
             </Link>
             <div className={cx('data')}>
                 <Link className={cx('name')}>{name}</Link>
-                {sex && <div className={cx('sex')}>{sex}</div>}
+                {category && <div className={cx('category')}>{category}</div>}
                 {price &&
                     ((noSale && <div className={cx('price')}>${price}</div>) ||
                         (sale && (
