@@ -6,12 +6,15 @@ import styles from './Menu.module.scss';
 import { Wrapper as PopperWrapper } from 'components/Popper';
 import logo from 'assets/images/logo.png';
 import config from 'config';
+import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
-const currentUser = false;
+// const currentUser = false;
 
 function MenuUser({ children }) {
+    const [currentUser, setCurrentUser] = useState(true);
+
     return (
         <Tippy
             interactive={true}
@@ -39,7 +42,7 @@ function MenuUser({ children }) {
                                     <button className={cx('signin')}>Đăng ký</button>
                                     <div className={cx('signup')}>
                                         <p>Bạn đã có tài khoản?</p>
-                                        <Link className={cx('link')} to="/">
+                                        <Link onClick={() => setCurrentUser(false)} className={cx('link')} to="/">
                                             Đăng nhập
                                         </Link>
                                     </div>
@@ -65,7 +68,7 @@ function MenuUser({ children }) {
                                     <button className={cx('signin')}>Đăng nhập</button>
                                     <div className={cx('signup')}>
                                         <p>Bạn chưa có tài khoản?</p>
-                                        <Link className={cx('link')} to="/">
+                                        <Link onClick={() => setCurrentUser(true)} className={cx('link')} to="/">
                                             Đăng ký
                                         </Link>
                                     </div>

@@ -3,8 +3,7 @@ const routes = {
     blog: '/blog',
     men: '/men',
     women: '/women',
-    detail4: '/detail4',
-    detail5: '/detail5',
+    detail: '/detail',
 }
 
 export default routes;

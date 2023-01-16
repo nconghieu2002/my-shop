@@ -21,7 +21,7 @@ function Search() {
     const inputRef = useRef();
 
     useEffect(() => {
-        fetch(`http://localhost:3000/data/?q=${debouncedValue}`)
+        fetch(`http://localhost:3000/products/?q=${debouncedValue}`)
             .then((res) => res.json())
             .then((res) => {
                 setSearchResult(res);

@@ -2,7 +2,8 @@ import classNames from 'classnames/bind';
 import styles from './OnSale.module.scss';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-import { useEffect, useState } from 'react';
+import {useContext, useEffect, useState } from 'react';
+import { Context } from 'Context';
 
 import CardItem from 'components/CardItem';
 import Button from 'components/Button';
@@ -10,11 +11,12 @@ import Button from 'components/Button';
 const cx = classNames.bind(styles);
 
 function OnSale() {
+    const { handleId } = useContext(Context);
     const [listData, setListData] = useState([]);
     const [currentShow, setCurrentShow] = useState(true);
 
     useEffect(() => {
-        fetch(`http://localhost:3000/data`)
+        fetch(`http://localhost:3000/products`)
             .then((res) => res.json())
             .then((res) => {
                 setListData(res);
@@ -41,7 +43,7 @@ function OnSale() {
                             .map((data) => (
                                 <CardItem
                                     key={data.id}
-                                    to={"/detail"+data.id}
+                                    to={"/detail?id="+data.id}
                                     img={data.banner}
                                     name={data.name}
                                     price={data.price}

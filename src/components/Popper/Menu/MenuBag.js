@@ -3,7 +3,7 @@ import styles from './Menu.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 import { Wrapper as PopperWrapper } from '../../Popper';
 import Button from '../../Button';
@@ -12,7 +12,12 @@ import { Context } from 'Context';
 const cx = classNames.bind(styles);
 
 function MenuBag({ children }) {
-    const { count } = useContext(Context);
+    const { count, nameProduct, listData, id } = useContext(Context);
+    const [clear, setClear] = useState(true);
+
+    const handleClear = () => {
+        setClear(false);
+    };
 
     return (
         <Tippy
@@ -33,24 +38,30 @@ function MenuBag({ children }) {
                                 </button>
                             </div>
                             <div className={cx('wrapper-scrool')}>
-                                <div className={cx('container')}>
-                                    <img
-                                        className={cx('image-shoes')}
-                                        src="https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/113ed7bfedf242489d79aed7016d10b6_9366/GV8697_700_GV8697_01_standard.jpg.jpg?sh=364&strip=false&sw=364"
-                                    />
-                                    <div className={cx('container-content')}>
-                                        <div className={cx('content-title')}>Nike Free Metcon 4</div>
-                                        <div className={cx('content-sex')}>Giày Nam</div>
-                                        <div className={cx('content-size')}>Size EU 44.5</div>
-                                        <div className={cx('content-price')}>2000$</div>
-                                    </div>
-                                    <button className={cx('clear-item')}>
-                                        <FontAwesomeIcon icon={faXmark} />
-                                    </button>
-                                </div>
+                                {listData.map(
+                                    (data, index) =>
+                                        id == index &&
+                                        clear && (
+                                            <div key={index} className={cx('container')}>
+                                                <img className={cx('image-shoes')} src={nameProduct.banner} />
+                                                <div className={cx('container-content')}>
+                                                    <div className={cx('content-title')}>{nameProduct.name}</div>
+                                                    <div className={cx('content-sex')}>Giày Nam</div>
+                                                    <div className={cx('content-size')}>Size 40</div>
+                                                    <div className={cx('wrapper-price')}>
+                                                        <div className={cx('price')}>${nameProduct.price}</div>
+                                                        <div className={cx('sale')}>${nameProduct.sale}</div>
+                                                    </div>
+                                                </div>
+                                                <button onClick={handleClear} className={cx('clear-item')}>
+                                                    <FontAwesomeIcon icon={faXmark} />
+                                                </button>
+                                            </div>
+                                        ),
+                                )}
                             </div>
                             <div className={cx('bag-btn')}>
-                                <Button to="/women" primary>
+                                <Button to="#" primary>
                                     View Bag ({count})
                                 </Button>
                                 <Button>Checkout</Button>

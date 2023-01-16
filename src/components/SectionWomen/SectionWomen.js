@@ -12,7 +12,7 @@ function SectionWomen() {
     const [listData, setListData] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:3000/data`)
+        fetch(`http://localhost:3000/products`)
             .then((res) => res.json())
             .then((res) => {
                 setListData(res);

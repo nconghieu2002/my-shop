@@ -1,5 +1,5 @@
 {
-    "data": [
+    "products": [
         {
             "id": 1,
             "name": "ULTRABOOST 1.0",
@@ -509,6 +509,18 @@
             "color": "black",
             "size": [36, 37, 38, 39, 40, 41, 42],
             "description": "Đôi giày giúp bạn có năng lượng từ đầu đến cuối, và nó được uốn cong hỗ trợ bàn chân bạn với mỗi bước. Chiếc giày này được làm bằng sợi hiệu suất cao, chứa ít nhất 50% chất thải nhựa được tái tạo, bị dạt trên các hòn đảo xa xôi, bãi biển, cộng đồng ven biển và bờ biển, ngăn chặn nó gây ô nhiễm đại dương của chúng ta. 50% sợi khác được tái chế polyester."
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "Cong Hieu",
+            "ava": ""
+        },
+        {
+            "id": 2,
+            "name": "Ngoc Hieu",
+            "ava": ""
         }
     ]
 }

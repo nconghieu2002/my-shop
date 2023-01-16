@@ -12,7 +12,7 @@ function Section() {
     const [currentShow, setCurrentShow] = useState(true);
 
     useEffect(() => {
-        fetch(`http://localhost:3000/data`)
+        fetch(`http://localhost:3000/products`)
             .then((res) => res.json())
             .then((res) => {
                 setListData(res);
@@ -28,7 +28,7 @@ function Section() {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:3000/data`)
+        fetch(`http://localhost:3000/products`)
             .then((res) => res.json())
             .then((res) => {
                 setListData(res);

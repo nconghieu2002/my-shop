@@ -176,13 +176,27 @@
     font-weight: 300;
 }
 
-.content-price {
+.wrapper-price {
+    width: 76px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2px;
+
+    .price {
+        text-decoration-line: line-through;
+    }
+
+    .sale {
+        color: rgba(254, 44, 85, 1);
+        font-weight: 600;
+    }
 }
+
 
 .clear-item {
     background-color: #fff;
     position: absolute;
-    right: 50px;
+    right: 45px;
 
     &:hover {
         color: rgba(254, 44, 85, 1);
@@ -194,3 +208,4 @@
     display: flex;
     justify-content: space-around;
 }
+
