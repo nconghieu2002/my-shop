@@ -1,9 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './OnSale.module.scss';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-import {useContext, useEffect, useState } from 'react';
-import { Context } from 'Context';
+import { useEffect, useState } from 'react';
 
 import CardItem from 'components/CardItem';
 import Button from 'components/Button';
@@ -11,7 +8,6 @@ import Button from 'components/Button';
 const cx = classNames.bind(styles);
 
 function OnSale() {
-    const { handleId } = useContext(Context);
     const [listData, setListData] = useState([]);
     const [currentShow, setCurrentShow] = useState(true);
 
@@ -28,7 +24,7 @@ function OnSale() {
     };
 
     const handleRemoveMore = () => {
-        setCurrentShow(false);
+        setCurrentShow(true);
     };
 
     return (
@@ -43,7 +39,7 @@ function OnSale() {
                             .map((data) => (
                                 <CardItem
                                     key={data.id}
-                                    to={"/detail?id="+data.id}
+                                    to={'/detail?id=' + data.id}
                                     img={data.banner}
                                     name={data.name}
                                     price={data.price}
@@ -79,32 +75,6 @@ function OnSale() {
                     </div>
                 </div>
             )}
-
-            {/* <div className={cx('wrapper-bootstrap')}>
-                <Pagination aria-label="Page navigation example" size="sm">
-                    <PaginationItem>
-                        <PaginationLink first href="#" />
-                    </PaginationItem>
-                    <PaginationItem>
-                        <PaginationLink href="#" previous />
-                    </PaginationItem>
-                    <PaginationItem>
-                        <PaginationLink href="#">1</PaginationLink>
-                    </PaginationItem>
-                    <PaginationItem>
-                        <PaginationLink href="#">2</PaginationLink>
-                    </PaginationItem>
-                    <PaginationItem>
-                        <PaginationLink href="#">3</PaginationLink>
-                    </PaginationItem>
-                    <PaginationItem>
-                        <PaginationLink href="#" next />
-                    </PaginationItem>
-                    <PaginationItem>
-                        <PaginationLink href="#" last />
-                    </PaginationItem>
-                </Pagination>
-            </div> */}
         </div>
     );
 }
