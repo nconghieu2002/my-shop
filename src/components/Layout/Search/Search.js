@@ -55,28 +55,33 @@ function Search() {
             )}
             onClickOutside={handleHideResult}
         >
-            <div className={cx('search')}>
-                <input
-                    ref={inputRef}
-                    value={searchValue}
-                    type="text"
-                    placeholder="Tìm kiếm..."
-                    onChange={handleChange}
-                    onFocus={() => setShowResult(true)}
-                />
-                {!!searchValue && (
-                    <button
-                        className={cx('clear')}
-                        onClick={() => {
-                            setSearchValue('');
-                            inputRef.current.focus();
-                        }}
-                    >
-                        <FontAwesomeIcon icon={faXmark} />
-                    </button>
-                )}
+            <div>
+                <div className={cx('search')}>
+                    <input
+                        ref={inputRef}
+                        value={searchValue}
+                        type="text"
+                        placeholder="Tìm kiếm..."
+                        onChange={handleChange}
+                        onFocus={() => setShowResult(true)}
+                    />
+                    {!!searchValue && (
+                        <button
+                            className={cx('clear')}
+                            onClick={() => {
+                                setSearchValue('');
+                                inputRef.current.focus();
+                            }}
+                        >
+                            <FontAwesomeIcon icon={faXmark} />
+                        </button>
+                    )}
 
-                <button className={cx('search-btn')}>
+                    <button className={cx('search-btn')}>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    </button>
+                </div>
+                <button className={cx('search-btn-small')}>
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </button>
             </div>

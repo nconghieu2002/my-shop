@@ -103,3 +103,19 @@
 .active-wish .count-wish {
     opacity: 0;
 }
+
+@media screen and (max-width: 1000px) {
+    .actions {
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .actions {
+        display: none;
+    }
+}
+

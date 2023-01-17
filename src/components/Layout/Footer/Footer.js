@@ -24,15 +24,15 @@ function Footer() {
                     <p>Chi nhánh 3</p>
                 </div>
                 <div className={cx('contact')}>
-                <button className={cx('btn-icon', 'btn-face')}>
-                        <FontAwesomeIcon icon={faFacebook} className={cx('face-icon')}/>
+                    <button className={cx('btn-icon', 'btn-face')}>
+                        <FontAwesomeIcon icon={faFacebook} className={cx('face-icon')} />
                     </button>
                     <button className={cx('btn-icon')}>
                         <FontAwesomeIcon icon={faInstagram} className={cx('ins-icon')} />
                     </button>
-                    
-                    <button className={cx('btn-icon','btn-twi')}> 
-                        <FontAwesomeIcon icon={faTwitter} className={cx('twi-icon')}/>
+
+                    <button className={cx('btn-icon', 'btn-twi')}>
+                        <FontAwesomeIcon icon={faTwitter} className={cx('twi-icon')} />
                     </button>
                 </div>
             </div>

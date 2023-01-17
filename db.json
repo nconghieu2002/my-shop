@@ -514,12 +514,14 @@
     "users": [
         {
             "id": 1,
-            "name": "Cong Hieu",
+            "username": "conghieu",
+            "password": "123456",
             "ava": ""
         },
         {
             "id": 2,
-            "name": "Ngoc Hieu",
+            "username": "admin",
+            "password": "123456",
             "ava": ""
         }
     ]

@@ -10,8 +10,6 @@ import { useEffect, useState } from 'react';
 
 const cx = classNames.bind(styles);
 
-// const currentUser = false;
-
 function MenuUser({ children }) {
     const [currentUser, setCurrentUser] = useState(true);
     const [inputValue, setInputValue] = useState('');
@@ -19,9 +17,14 @@ function MenuUser({ children }) {
     const [inputValueUser, setInputValueUser] = useState('');
     const [inputValuePassUser, setInputValuePassUser] = useState('');
 
-    const handleChangeUserName = (e) => {
+    function handleChangeUserName(e) {
         setInputValue(e.target.value);
         localStorage.setItem('username', inputValue);
+        console.log(inputValue);
+    };
+
+    const handleChange = (e) => {
+        setInputValueUser(e.target.value);
     };
 
     const handleChangePass = (e) => {
@@ -29,7 +32,11 @@ function MenuUser({ children }) {
         localStorage.setItem('password', inputValuePass);
     };
 
-    const handleLogin = () => {
+    function handleChangePassUser  (e) {
+        setInputValuePassUser(e.target.value);
+    };
+
+    async function handleLogin () {
         setInputValue('');
         setInputValuePass('');
         alert('Đăng ký thành công');
@@ -37,9 +44,11 @@ function MenuUser({ children }) {
     };
 
     const handleSuccess = () => {
+        console.log(localStorage.getItem('username'));
+        console.log(inputValueUser);
         if (
-            inputValueUser == localStorage.getItem('username') &
-            inputValuePassUser == localStorage.getItem('password')
+            (inputValueUser == localStorage.getItem('username')) &
+            (inputValuePassUser == localStorage.getItem('password'))
         ) {
             alert('Đăng nhập thành công');
         } else {
@@ -107,6 +116,7 @@ function MenuUser({ children }) {
                                         <p className={cx('text')}>Tài khoản</p>
                                         <input
                                             value={inputValueUser}
+                                            onChange={handleChange}
                                             className={cx('input')}
                                             type="text"
                                             placeholder="Tên đăng nhập"
@@ -116,6 +126,7 @@ function MenuUser({ children }) {
                                         <p className={cx('text')}>Mật khẩu</p>
                                         <input
                                             value={inputValuePassUser}
+                                            onChange={handleChangePassUser}
                                             className={cx('input')}
                                             type="password"
                                             placeholder="Mật khẩu"

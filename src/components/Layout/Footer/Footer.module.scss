@@ -82,11 +82,20 @@
     background-color: rgb(0, 174, 255);
 }
 
-.ins-icon {
+@media screen and (max-width: 800px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infor, .address {
+        font-size: 12px;
+        width: 30%;
+    }
+
+
+    .btn-icon {
+        margin-bottom: 12px;
+    }
 }
 
-.face-icon {
-}
-
-.twi-icon {
-}

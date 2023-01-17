@@ -32,3 +32,48 @@
         color: rgba(254, 44, 85, 1);
     }
 }
+
+.menu-menu {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        padding: 0 80px;
+    }
+
+    .menu {
+        width: 5%;
+        justify-content: center;
+    }
+    .menu-men,
+    .menu-women,
+    .menu-blog {
+        display: none;
+    }
+    .menu-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .wrapper {
+        padding: 0 40px;
+    }
+
+    .menu {
+        position: absolute;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top:14px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
