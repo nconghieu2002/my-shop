@@ -81,9 +81,6 @@ function Search() {
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </button>
                 </div>
-                <button className={cx('search-btn-small')}>
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
-                </button>
             </div>
         </Tippy>
     );

@@ -71,19 +71,4 @@
     }
 }
 
-.search-btn-small {
-    display: none;
-}
 
-@media screen and (max-width: 760px) {
-    .search {
-        display: none;
-    }
-
-    .search-btn-small {
-        display: block;
-        font-size: 18px;
-        background-color: #fff;
-        margin-right: -8px;
-    }
-}

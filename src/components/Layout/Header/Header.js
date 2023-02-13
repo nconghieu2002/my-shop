@@ -26,9 +26,6 @@ function Header() {
                     <NavLink className={(nav) => cx('menu-blog', { active: nav.isActive })} to={config.routes.blog}>
                         BLOG
                     </NavLink>
-                    <NavLink className={(nav) => cx('menu-menu', { active: nav.isActive })} to={config.routes.blog}>
-                        MENU
-                    </NavLink>
                 </div>
                 <Search />
                 <ButtonIcon />
