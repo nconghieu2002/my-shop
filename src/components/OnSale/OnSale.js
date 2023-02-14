@@ -35,7 +35,7 @@ function OnSale() {
                     <div className={cx('form')}>
                         {listData
                             .filter((data) => data.sale)
-                            .splice(0, 8)
+                            .slice(0, 8)
                             .map((data) => (
                                 <CardItem
                                     key={data.id}
@@ -48,7 +48,7 @@ function OnSale() {
                             ))}
                     </div>
                     <div className={cx('wrapper-btn')}>
-                        <Button primary to="/" onClick={handleMore}>
+                        <Button primary to="" onClick={handleMore}>
                             Xem Thêm
                         </Button>
                     </div>
@@ -61,6 +61,7 @@ function OnSale() {
                             .map((data) => (
                                 <CardItem
                                     key={data.id}
+                                    to={'/detail?id=' + data.id}
                                     img={data.banner}
                                     name={data.name}
                                     price={data.price}

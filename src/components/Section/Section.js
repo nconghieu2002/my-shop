@@ -45,7 +45,13 @@ function Section() {
                             .filter((data) => data)
                             .splice(0, 8)
                             .map((data) => (
-                                <CardItem key={data.id} img={data.banner} name={data.name} category={data.category} />
+                                <CardItem
+                                    key={data.id}
+                                    to={'/detail?id=' + data.id}
+                                    img={data.banner}
+                                    name={data.name}
+                                    category={data.category}
+                                />
                             ))}
                     </div>
                     <div className={cx('wrapper-btn')}>
@@ -60,7 +66,13 @@ function Section() {
                         {listData
                             .filter((data) => data)
                             .map((data) => (
-                                <CardItem key={data.id} img={data.banner} name={data.name} category={data.category} />
+                                <CardItem
+                                    key={data.id}
+                                    to={'/detail?id=' + data.id}
+                                    img={data.banner}
+                                    name={data.name}
+                                    category={data.category}
+                                />
                             ))}
                     </div>
                     <div className={cx('wrapper-btn')}>

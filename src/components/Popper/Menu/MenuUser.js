@@ -6,54 +6,28 @@ import styles from './Menu.module.scss';
 import { Wrapper as PopperWrapper } from 'components/Popper';
 import logo from 'assets/images/logo.png';
 import config from 'config';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
 function MenuUser({ children }) {
     const [currentUser, setCurrentUser] = useState(true);
-    const [inputValue, setInputValue] = useState('');
-    const [inputValuePass, setInputValuePass] = useState('');
-    const [inputValueUser, setInputValueUser] = useState('');
-    const [inputValuePassUser, setInputValuePassUser] = useState('');
+    const [userName, setUserName] = useState('');
+    const [password, setPassword] = useState('');
+    const [userNameInput, setUserNameInput] = useState('');
+    const [passwordInput, setPasswordInput] = useState('');
 
-    function handleChangeUserName(e) {
-        setInputValue(e.target.value);
-        localStorage.setItem('username', inputValue);
-        console.log(inputValue);
-    };
-
-    const handleChange = (e) => {
-        setInputValueUser(e.target.value);
-    };
-
-    const handleChangePass = (e) => {
-        setInputValuePass(e.target.value);
-        localStorage.setItem('password', inputValuePass);
-    };
-
-    function handleChangePassUser  (e) {
-        setInputValuePassUser(e.target.value);
-    };
-
-    async function handleLogin () {
-        setInputValue('');
-        setInputValuePass('');
-        alert('Đăng ký thành công');
-        setCurrentUser(false);
-    };
-
-    const handleSuccess = () => {
-        console.log(localStorage.getItem('username'));
-        console.log(inputValueUser);
-        if (
-            (inputValueUser == localStorage.getItem('username')) &
-            (inputValuePassUser == localStorage.getItem('password'))
-        ) {
-            alert('Đăng nhập thành công');
+    const handleAccount = () => {
+        if (userName.trim() != '' && password.trim() != '') {
+            alert('Thanhcong');
         } else {
-            alert('Tài khoản của bạn không đúng');
+            alert('Nhaplai');
         }
+
+        localStorage.setItem('userName', userName);
+        localStorage.setItem('password', password);
+        setUserName('');
+        setPassword('');
     };
 
     return (
@@ -75,8 +49,8 @@ function MenuUser({ children }) {
                                     <div className={cx('account')}>
                                         <p className={cx('text')}>Tài khoản</p>
                                         <input
-                                            value={inputValue}
-                                            onChange={handleChangeUserName}
+                                            value={userName}
+                                            onChange={(e) => setUserName(e.target.value)}
                                             className={cx('input')}
                                             type="text"
                                             placeholder="Tên đăng nhập"
@@ -85,19 +59,19 @@ function MenuUser({ children }) {
                                     <div className={cx('account')}>
                                         <p className={cx('text')}>Mật khẩu</p>
                                         <input
-                                            value={inputValuePass}
-                                            onChange={handleChangePass}
+                                            value={password}
+                                            onChange={(e) => setPassword(e.target.value)}
                                             className={cx('input')}
                                             type="password"
                                             placeholder="Mật khẩu"
                                         />
                                     </div>
-                                    <button onClick={handleLogin} className={cx('signin')}>
+                                    <button onClick={() => handleAccount()} className={cx('signin')}>
                                         Đăng ký
                                     </button>
                                     <div className={cx('signup')}>
                                         <p>Bạn đã có tài khoản?</p>
-                                        <Link onClick={() => setCurrentUser(false)} className={cx('link')} to="/">
+                                        <Link onClick={() => setCurrentUser(false)} className={cx('link')} to="">
                                             Đăng nhập
                                         </Link>
                                     </div>
@@ -115,8 +89,8 @@ function MenuUser({ children }) {
                                     <div className={cx('account')}>
                                         <p className={cx('text')}>Tài khoản</p>
                                         <input
-                                            value={inputValueUser}
-                                            onChange={handleChange}
+                                            value={userNameInput}
+                                            onChange={(e) => setUserNameInput(e.target.value)}
                                             className={cx('input')}
                                             type="text"
                                             placeholder="Tên đăng nhập"
@@ -125,19 +99,22 @@ function MenuUser({ children }) {
                                     <div className={cx('account')}>
                                         <p className={cx('text')}>Mật khẩu</p>
                                         <input
-                                            value={inputValuePassUser}
-                                            onChange={handleChangePassUser}
+                                            value={passwordInput}
+                                            onChange={(e) => setPasswordInput(e.target.value)}
                                             className={cx('input')}
                                             type="password"
                                             placeholder="Mật khẩu"
                                         />
                                     </div>
-                                    <button onClick={handleSuccess} className={cx('signin')}>
+                                    <button
+                                        // onClick={handleSuccess}
+                                        className={cx('signin')}
+                                    >
                                         Đăng nhập
                                     </button>
                                     <div className={cx('signup')}>
                                         <p>Bạn chưa có tài khoản?</p>
-                                        <Link onClick={() => setCurrentUser(true)} className={cx('link')} to="/">
+                                        <Link onClick={() => setCurrentUser(true)} className={cx('link')} to="">
                                             Đăng ký
                                         </Link>
                                     </div>

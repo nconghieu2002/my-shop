@@ -7,7 +7,23 @@ import { Context } from 'Context';
 const cx = classNames.bind(styles);
 
 function Detail() {
-    const { handleBuy, listProducts, nameProduct } = useContext(Context);
+    const { handleBuy, handleCart, id } = useContext(Context);
+    const [listProducts, setListProducts] = useState([]);
+    const [nameProduct, setNameProduct] = useState([]);
+
+    useEffect(() => {
+        fetch(`http://localhost:3000/products?id=` + id)
+            .then((res) => res.json())
+            .then((res) => {
+                // console.log(res[0].images)
+                setListProducts(res[0].images);
+                // console.log(res[0]);
+                setNameProduct(res[0]);
+                // arr = [...arr, id];
+                // console.log(arr);
+                // localStorage.setItem('array', arr);
+            });
+    }, [id]);
 
     return (
         <div className={cx('wrapper')}>
@@ -34,7 +50,7 @@ function Detail() {
                     <div className={cx('size-card')}>Size 41</div>
                     <div className={cx('size-card')}>Size 42</div>
                 </div>
-                <button className={cx('add-btn-bag')} onClick={handleBuy}>
+                <button className={cx('add-btn-bag')} onClick={() => (handleBuy(), handleCart())}>
                     Thêm vào túi
                 </button>
                 <button className={cx('add-btn-wish')}>Yêu thích</button>
