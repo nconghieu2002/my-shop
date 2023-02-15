@@ -3,7 +3,7 @@ import styles from './Menu.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
 
 import { Wrapper as PopperWrapper } from '../../Popper';
 import Button from '../../Button';
@@ -12,8 +12,9 @@ import { Context } from 'Context';
 const cx = classNames.bind(styles);
 
 function MenuBag({ children }) {
-    const { count, nameProduct, listData, id } = useContext(Context);
+    const { count, listData, id } = useContext(Context);
     const [clear, setClear] = useState(true);
+    const [nameProduct, setNameProduct] = useState([]);
 
     const handleClear = () => {
         setClear(false);

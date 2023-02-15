@@ -15,13 +15,8 @@ function Detail() {
         fetch(`http://localhost:3000/products?id=` + id)
             .then((res) => res.json())
             .then((res) => {
-                // console.log(res[0].images)
                 setListProducts(res[0].images);
-                // console.log(res[0]);
                 setNameProduct(res[0]);
-                // arr = [...arr, id];
-                // console.log(arr);
-                // localStorage.setItem('array', arr);
             });
     }, [id]);
 
