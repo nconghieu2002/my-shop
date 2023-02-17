@@ -1,0 +1,63 @@
+.wrapper {
+    margin: 20px 0 40px 40px;
+}
+
+.title {
+}
+
+.add {
+    margin-left: 80%;
+    margin-bottom: 20px;
+}
+
+.container {
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-items: center;
+    column-gap: 100px;
+    text-align: center;
+}
+
+.img {
+}
+
+.name {
+}
+
+.fix {
+}
+
+.delete {
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-items: center;
+    column-gap: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 120px;
+}
+
+.img-detail {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.name-detail {
+}
+
+.fix-detail,
+.delete-detail {
+    background-color: #fff;
+}
+
+.fix-detail:hover,
+.delete-detail:hover {
+    color: rgba(254, 44, 85, 1);
+}

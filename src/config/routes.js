@@ -4,6 +4,7 @@ const routes = {
     men: '/men',
     women: '/women',
     detail: '/detail',
+    admin: '/admin',
 }
 
 export default routes;

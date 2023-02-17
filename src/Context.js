@@ -19,11 +19,11 @@ export const ContextProvider = ({ children }) => {
             });
     }, []);
 
-    const handleCart = function () {
-        setArray([...array, id]);
-        localStorage.setItem('array', array);
-        console.log(id);
-        console.log(array);
+    const newArray = [...array, id];
+
+    const handleCart = () => {
+        setArray(newArray);
+        localStorage.setItem('array', JSON.stringify(newArray));
     };
 
     const handleBuy = () => {
