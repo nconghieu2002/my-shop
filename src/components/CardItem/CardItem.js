@@ -5,17 +5,23 @@ import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 
 function CardItem({ to, img, name, price, sale, noSale, category, btnColor }) {
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
+
     if (!sale) {
         noSale = true;
     }
 
     return (
         <div className={cx('wrapper')}>
-            <Link to={to}  className={cx('link-detail')}>
+            <Link onClick={scrollToTop} to={to} className={cx('link-detail')}>
                 <img className={cx('img')} src={img} alt="" />
             </Link>
             <div className={cx('data')}>
-                <Link className={cx('name')}>{name}</Link>
+                <Link onClick={scrollToTop} to={to} className={cx('name')}>
+                    {name}
+                </Link>
                 {category && <div className={cx('category')}>{category}</div>}
                 {price &&
                     ((noSale && <div className={cx('price')}>${price}</div>) ||

@@ -9,7 +9,7 @@ export const ContextProvider = ({ children }) => {
 
     const [count, setCount] = useState(0);
     const [listData, setListData] = useState([]);
-    const [array, setArray] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
 
     useEffect(() => {
         fetch(`http://localhost:3000/products`)
@@ -19,15 +19,47 @@ export const ContextProvider = ({ children }) => {
             });
     }, []);
 
-    const newArray = [...array, id];
+    const removeItem = (id) => {
+        const newCartItems = cartItems.filter((item) => item.id !== id);
+        setCartItems(newCartItems);
 
-    const handleCart = () => {
-        setArray(newArray);
-        localStorage.setItem('array', JSON.stringify(newArray));
+        const newTotalQuantity = newCartItems.reduce((total, item) => {
+            return total + item.quantity;
+        }, 0);
+
+        setCount(newTotalQuantity);
     };
 
-    const handleBuy = () => {
-        setCount(count + 1);
+    const addToCart = () => {
+        const product = listData.find((item) => item.id == id);
+        // Lấy thông tin sản phẩm được chọn
+        const item = {
+            id: product.id,
+            name: product.name,
+            price: product.price,
+            sale: product.sale,
+            banner: product.banner,
+            quantity: 1,
+        };
+
+        // Kiểm tra sản phẩm đã tồn tại trong giỏ hàng hay chưa
+        const existingItem = cartItems.find((i) => i.id === item.id);
+
+        if (existingItem) {
+            // Nếu sản phẩm đã tồn tại trong giỏ hàng, tăng số lượng lên 1
+            setCartItems(cartItems.map((i) => (i.id === existingItem.id ? { ...i, quantity: i.quantity + 1 } : i)));
+        } else {
+            // Nếu sản phẩm chưa tồn tại trong giỏ hàng, thêm vào giỏ hàng
+            setCartItems([...cartItems, item]);
+        }
+
+        // Tính tổng số lượng sản phẩm trong giỏ hàng
+        const totalQuantity = cartItems.reduce((total, item) => {
+            return total + item.quantity;
+        }, 1);
+
+        // Cập nhật giá trị của count
+        setCount(totalQuantity);
     };
 
     return (
@@ -35,8 +67,9 @@ export const ContextProvider = ({ children }) => {
             value={{
                 count,
                 listData,
-                handleBuy,
-                handleCart,
+                cartItems,
+                addToCart,
+                removeItem,
                 id,
             }}
         >

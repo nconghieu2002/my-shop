@@ -12,9 +12,7 @@ import { Context } from 'Context';
 const cx = classNames.bind(styles);
 
 function MenuBag({ children }) {
-    const { count, listData } = useContext(Context);
-
-    const localData = JSON.parse(localStorage.getItem('array'));
+    const { count, cartItems, removeItem } = useContext(Context);
 
     return (
         <Tippy
@@ -35,29 +33,24 @@ function MenuBag({ children }) {
                                 </button>
                             </div>
                             <div className={cx('wrapper-scrool')}>
-                                {localData &&
-                                    localData.map((value) =>
-                                        listData.map(
-                                            (data) =>
-                                                value == data.id && (
-                                                    <div key={data.id} className={cx('container')}>
-                                                        <img className={cx('image-shoes')} src={data.banner} />
-                                                        <div className={cx('container-content')}>
-                                                            <div className={cx('content-title')}>{data.name}</div>
-                                                            <div className={cx('content-sex')}>Giày Nam</div>
-                                                            <div className={cx('content-size')}>Size 40</div>
-                                                            <div className={cx('wrapper-price')}>
-                                                                <div className={cx('price')}>${data.price}</div>
-                                                                <div className={cx('sale')}>${data.sale}</div>
-                                                            </div>
-                                                        </div>
-                                                        <button className={cx('clear-item')}>
-                                                            <FontAwesomeIcon icon={faXmark} />
-                                                        </button>
-                                                    </div>
-                                                ),
-                                        ),
-                                    )}
+                                {cartItems.map((data) => (
+                                    <div key={data.id} className={cx('container')}>
+                                        <img className={cx('image-shoes')} src={data.banner} />
+                                        <div className={cx('quantity')}>{data.quantity}</div>
+                                        <div className={cx('container-content')}>
+                                            <div className={cx('content-title')}>{data.name}</div>
+                                            <div className={cx('content-sex')}>Giày Nam</div>
+                                            <div className={cx('content-size')}>Size 40</div>
+                                            <div className={cx('wrapper-price')}>
+                                                <div className={cx('price')}>${data.price}</div>
+                                                <div className={cx('sale')}>${data.sale}</div>
+                                            </div>
+                                        </div>
+                                        <button onClick={() => removeItem(data.id)} className={cx('clear-item')}>
+                                            <FontAwesomeIcon icon={faXmark} />
+                                        </button>
+                                    </div>
+                                ))}
                             </div>
                             <div className={cx('bag-btn')}>
                                 <Button to="#" primary>

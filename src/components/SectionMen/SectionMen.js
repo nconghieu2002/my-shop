@@ -24,7 +24,14 @@ function SectionMen() {
             <h2 className={cx('heading')}>Giày Nam</h2>
             <div className={cx('form')}>
                 {listData.splice(0, 12).map((data) => (
-                    <CardItem key={data.id} img={data.banner} name={data.name} price={data.price} sale={data.sale} />
+                    <CardItem
+                        key={data.id}
+                        to={'/detail?id=' + data.id}
+                        img={data.banner}
+                        name={data.name}
+                        price={data.price}
+                        sale={data.sale}
+                    />
                 ))}
             </div>
             <div className={cx('wrapper-bootstrap')}>
