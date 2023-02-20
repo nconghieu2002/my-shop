@@ -6,16 +6,39 @@ import styles from './Menu.module.scss';
 import { Wrapper as PopperWrapper } from 'components/Popper';
 import logo from 'assets/images/logo.png';
 import config from 'config';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const cx = classNames.bind(styles);
 
 function MenuUser({ children }) {
-    const [currentUser, setCurrentUser] = useState(true);
+    const [currentUser, setCurrentUser] = useState(false);
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
     const [userNameInput, setUserNameInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
+    const [admin, setAdmin] = useState('');
+
+    useEffect(() => {
+        if (admin) {
+            window.location.href = admin;
+        }
+    }, [admin]);
+
+    const userAdmin = 'admin';
+    const passwordAdmin = 'admin';
+
+    const handleAccountAmin = () => {
+        if (userNameInput.trim() === userAdmin && passwordInput.trim() === passwordAdmin) {
+            console.log('sad');
+            setUserNameInput('');
+            setPasswordInput('');
+            setAdmin('/admin');
+        } else {
+            alert('Thông tin tài khoản hoặc mật khẩu không chính xác');
+            setUserNameInput('');
+            setPasswordInput('');
+        }
+    };
 
     const handleAccount = () => {
         if (userName.trim() != '' && password.trim() != '') {
@@ -106,12 +129,11 @@ function MenuUser({ children }) {
                                             placeholder="Mật khẩu"
                                         />
                                     </div>
-                                    <button
-                                        // onClick={handleSuccess}
-                                        className={cx('signin')}
-                                    >
-                                        Đăng nhập
-                                    </button>
+                                    <Link to={admin}>
+                                        <button onClick={handleAccountAmin} className={cx('signin')}>
+                                            Đăng nhập
+                                        </button>
+                                    </Link>
                                     <div className={cx('signup')}>
                                         <p>Bạn chưa có tài khoản?</p>
                                         <Link onClick={() => setCurrentUser(true)} className={cx('link')} to="">
