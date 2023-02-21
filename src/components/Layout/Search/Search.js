@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useContext } from 'react';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -47,8 +47,8 @@ function Search() {
             render={(attrs) => (
                 <div className={cx('search-result')} tabIndex="-1" {...attrs}>
                     <PopperWrapper>
-                        {searchResult.slice(0, 5).map((result) => (
-                            <ListShoes key={result.id} data={result} />
+                        {searchResult.map((result) => (
+                            <ListShoes key={result.id} to={'/detail?id=' + result.id} data={result} />
                         ))}
                     </PopperWrapper>
                 </div>

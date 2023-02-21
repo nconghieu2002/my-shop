@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
-function CardItem({ to, img, name, price, sale, noSale, category, btnColor }) {
+function CardItem({ to, img, name, price, sale, noSale, category }) {
     const scrollToTop = () => {
         window.scrollTo(0, 0);
     };

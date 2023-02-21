@@ -31,10 +31,13 @@ function Detail() {
             <div className={cx('container')}>
                 <div className={cx('name')}>{nameProduct.name}</div>
                 <div className={cx('category')}>{nameProduct.category}</div>
-                <div className={cx('wrapper-price')}>
-                    <div className={cx('price')}>${nameProduct.price}</div>
-                    <div className={cx('sale')}>${nameProduct.sale}</div>
-                </div>
+                {(!nameProduct.sale && <div>${nameProduct.price}</div>) ||
+                    (nameProduct.sale && (
+                        <div className={cx('wrapper-price')}>
+                            <div className={cx('price')}>${nameProduct.price}</div>
+                            <div className={cx('sale')}>${nameProduct.sale}</div>
+                        </div>
+                    ))}
                 <div className={cx('size-title')}>Chọn size</div>
                 <div className={cx('list-size')}>
                     <div className={cx('size-card')}>Size 36</div>

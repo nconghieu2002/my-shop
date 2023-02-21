@@ -1,8 +1,13 @@
 .wrapper {
     width: 22%;
+    height: 425px;
     display: flex;
     flex-direction: column;
-    margin: 0 1.5%;
+    margin: 0 1.5% 40px 1.5%;
+
+    &:hover {
+        border: 1px solid rgba(254, 44, 85, 1);
+    }
 }
 
 .img {
@@ -26,7 +31,6 @@
 }
 
 .price {
-    
 }
 
 .wrapper-price {
@@ -87,4 +91,3 @@
         width: 100%;
     }
 }
-

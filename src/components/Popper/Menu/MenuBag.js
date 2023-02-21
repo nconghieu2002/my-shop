@@ -41,10 +41,17 @@ function MenuBag({ children }) {
                                             <div className={cx('content-title')}>{data.name}</div>
                                             <div className={cx('content-sex')}>Giày Nam</div>
                                             <div className={cx('content-size')}>Size 40</div>
-                                            <div className={cx('wrapper-price')}>
+                                            {/* <div className={cx('wrapper-price')}>
                                                 <div className={cx('price')}>${data.price}</div>
                                                 <div className={cx('sale')}>${data.sale}</div>
-                                            </div>
+                                            </div> */}
+                                            {(!data.sale && <div>${data.price}</div>) ||
+                                                (data.sale && (
+                                                    <div className={cx('wrapper-price')}>
+                                                        <div className={cx('price')}>${data.price}</div>
+                                                        <div className={cx('sale')}>${data.sale}</div>
+                                                    </div>
+                                                ))}
                                         </div>
                                         <button onClick={() => removeItem(data.id)} className={cx('clear-item')}>
                                             <FontAwesomeIcon icon={faXmark} />

@@ -1,11 +1,14 @@
 .wrapper {
     padding: 4px 8px;
-    display: flex;
-    align-items: center;
     cursor: pointer;
     &:hover {
         background-color: rgba(22, 24, 35, 0.03);
     }
+}
+
+.link-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .wrapper + .wrapper {
